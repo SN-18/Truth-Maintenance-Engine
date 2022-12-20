@@ -19,22 +19,22 @@ This statement is meant to update the KB by retracting statement 1. Doing this w
 
 ## How to run
 
-1.Check your python version by opening up a terminal environment (terminal on mac OS X, cmd on windows, etc) and using 
+1.Check your python version by opening up a terminal environment (terminal on mac OS X, cmd on windows, etc) and using <br>
 $ python --version
 
 This should generate something like this, if python is installed on the system.
 
 <img width="427" alt="image" src="https://user-images.githubusercontent.com/83748468/208569830-55cc116b-e93e-4840-b780-e143e7d68074.png">
 
-2. If Python is not installed, use a package manager like pip and commands such as 
+2. If Python is not installed, use a package manager like pip and commands such as:<br> 
 $ pip install python
 
 Visit:[Python's Official Download Page](https://www.python.org/downloads/) for information on how to download and install python.
 
-3. cd to your directory that contains the project. (cd command is short for change directory, read [cd](https://man7.org/linux/man-pages/man1/cd.1p.html), for example, for the TMS folder on user's desktop:
+3. cd to your directory that contains the project. (cd command is short for change directory, read [cd](https://man7.org/linux/man-pages/man1/cd.1p.html), for example, for the TMS folder on user's desktop:<br>
 $cd .~/Desktop/TMS
 
-4.Run the command python main.py from any python environment or terminal in IDE,
+4.Run the command python main.py from any python environment or terminal in IDE,<br>
 $ python main.py
 
 This would invoke the driver code. This would in turn call all the associated files and update the KB, as per incoming knowledge or beliefs from the logic.txt file.
