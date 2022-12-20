@@ -1,0 +1,18 @@
+1 ASSERT (a)
+2 ASSERT (-a, b)
+3 ASSERT (-b, -r)
+4 ASSERT (c)
+5 ASSERT (q)
+6 ASSERT (p, -c)
+7 RETRACT 4
+8 ASSERT (-b, c , r)
+9 ASSERT (b)
+10 RETRACT 2
+11 ASSERT (-q, v)
+12 ASSERT (-v, -r)
+13 ASSERT (-d)
+14 RETRACT 9
+15 ASSERT (d, v)
+16 RETRACT 8
+17 ASSERT (r, q)
+18 RETRACT 3
