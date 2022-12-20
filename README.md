@@ -1,41 +1,47 @@
-# CSC 520 AI (Fall 22)
-# Assignment 4 (Question 2)
+## Truth Maintenance System
+A Truth Maintenance System is a knowledge representation for maintaining beliefs and their dependencies. A truth maintenance system updates its knowledge base and maintains consistency through revision. 
 
-# @Author: Saurabh Nanda
-# @Unity: snanda2@ncsu.edu
 
-# Files
+## Files
+
+1. main.py: Contains the driver code
+2. propositional.py : Contains the Propositional logic to maintain the TMS, the TMS class and the Knowledge Base
+3. logic.txt: Contains a series of assertions int the following form:
+
+-1 ASSERT (a)
+
+This statements updates the KB with the truth of statement a. Similarly, 
+
+-2 RETRACT(1)
+
+This statement is meant to update the KB by retracting statement 1. Doing this would also impact the statements that contain statment 1 as a truth, such as a^b (where ^ represents conjunction). This in turn would need to update the KB by removing statements that contain a^b, and so on, for it's dependents.
+
+
+## How to run
 '''
-1.)main.py
-2.)propositional.py
-'''
+1.Check your python version by opening up a terminal environment (terminal on mac OS X, cmd on windows, etc) and using 
+$ python --version
 
-# How to run
-'''
-1.) Make sure to install python 3.X by either pip install python or using a package manager like homebrew or
-yum, etc
-2.) Run the command python main.py from any python environment or terminal in IDE
+This should generate something like this, if python is installed on the system.
+
+<img width="427" alt="image" src="https://user-images.githubusercontent.com/83748468/208569830-55cc116b-e93e-4840-b780-e143e7d68074.png">
+
+2. If Python is not installed, use a package manager like pip and commands such as 
+$ pip install python
+
+Visit:[Python's Official Download Page](https://www.python.org/downloads/) for information on how to download and install python.
+
+3. cd to your directory that contains the project. (cd command is short for change directory, read [cd](https://man7.org/linux/man-pages/man1/cd.1p.html), for example, for the TMS folder on user's desktop:
+$cd .~/Desktop/TMS
+
+4.Run the command python main.py from any python environment or terminal in IDE,
+$ python main.py
+
+This would invoke the driver code. This would in turn call all the associated files and update the KB, as per incoming knowledge or beliefs from the logic.txt file.
 
 
-# main.py
-'''Contains driver code. Invoking main.py runs the project.'''
 
-# propositional.py
-'''Contains src code. It contains the class TMS, short for Truth Maintenance System,
- and implements the following class methods (can be invoked by declaring t.assert(...),t.retract(...)
- and t.resolution(...), where ... denotes respective arguments:
 
-# logic.txt
-'''Contains the propositional logic statements in the form of conjuncts, (a, b) for example,
- means (a or b) and ~a is same as (not a), in this context '''
-
-1.) assert_s(): On encountering an ASSERT from logic.txt, it updates the KB. assert_s stands for
-assert statement (naming logic: since assert is a keyword in python). Prints the justification
-for statement added after updating kb.
-2.) retract_s(): On encountering a retract from logic.txt, it recursively retracts the statement mentioned,
-and it's dependencies, if any. Prints the justification of a statement being removed from KB.
-3.) resolution(): Encountering like (a or b) and (~a) would resolve to b, and three statements would be
-added to the KB.
 
 
 
