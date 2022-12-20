@@ -18,7 +18,7 @@ This statement is meant to update the KB by retracting statement 1. Doing this w
 
 
 ## How to run
-'''
+
 1.Check your python version by opening up a terminal environment (terminal on mac OS X, cmd on windows, etc) and using 
 $ python --version
 
