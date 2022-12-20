@@ -1,31 +1,31 @@
-#CSC 520 AI (Fall 22)
-#Assignment 4 (Question 2)
+# CSC 520 AI (Fall 22)
+# Assignment 4 (Question 2)
 
-#@Author: Saurabh Nanda
-#@Unity: snanda2@ncsu.edu
+# @Author: Saurabh Nanda
+# @Unity: snanda2@ncsu.edu
 
-#Files
+# Files
 '''
 1.)main.py
 2.)propositional.py
 '''
 
-#How to run
+# How to run
 '''
 1.) Make sure to install python 3.X by either pip install python or using a package manager like homebrew or
 yum, etc
 2.) Run the command python main.py from any python environment or terminal in IDE
 
 
-#main.py
+# main.py
 '''Contains driver code. Invoking main.py runs the project.'''
 
-#propositional.py
+# propositional.py
 '''Contains src code. It contains the class TMS, short for Truth Maintenance System,
  and implements the following class methods (can be invoked by declaring t.assert(...),t.retract(...)
  and t.resolution(...), where ... denotes respective arguments:
 
-#logic.txt
+# logic.txt
 '''Contains the propositional logic statements in the form of conjuncts, (a, b) for example,
  means (a or b) and ~a is same as (not a), in this context '''
 
