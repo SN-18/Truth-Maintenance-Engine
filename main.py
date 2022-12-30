@@ -34,6 +34,8 @@ if __name__ =="__main__":
 
             for i in range(len(state)):
                 final_state.append(state[i]) #idea is to append final_state[i+1]=state[i]
+
+            #debugging print statement commented out
             # print("final state is", final_state)
 
             # if not kb:
@@ -54,8 +56,11 @@ if __name__ =="__main__":
             # state.append(index)
             # print("retract")
             statement = line[10:].strip('\n').strip(' ').strip('(').strip(')')
+
             # print(statement)
             state.extend(statement)
+            #debugging print statements commented out
+            # print("retract state is", state)
             # print("retract statement is",state)
             TMS.retract_s(state)
             # print("I've returned from retract")
