@@ -1,4 +1,4 @@
-## Truth Maintenance System
+## Truth Maintenance Engine
 A Truth Maintenance System is a knowledge representation for maintaining beliefs and their dependencies. A truth maintenance system updates its knowledge base and maintains consistency through revision. 
 
 
